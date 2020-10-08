@@ -1,0 +1,252 @@
+ body{
+	margin: auto;
+	font-family: 'sans-serif', 'Pangolin', cursive;
+}
+
+*{
+  box-sizing: border-box;
+
+}
+.header{
+	width: 100%;
+	float: left;
+ }
+
+.header img{
+		width: 100%;
+	}
+
+.content_wrapper{
+	background-color: #e5e5e5;
+	min-height: 500px;
+	width: 100%;
+	float: left;
+	padding: 30px;
+}
+
+.content_wrapper .container{
+	width: 100%;
+	float: left;
+	border: 1px solid #c5c4c4;
+	background-color: #f9f9f9;
+	border-radius: 10px
+}
+
+.content_wrapper .nav{
+	width: 20%;
+	float: left;
+	background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 20px 0px 0px 20px;
+    
+}
+
+.content_wrapper .nav a{
+	/*background-color: #fbaeae;
+	border: 1px solid gray;*/
+	background-color: #047dc3;
+	border-radius: 4px;
+	padding: 12px 15px;
+	color: #ffffff;
+    margin-bottom: 15px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.content_wrapper .nav a.active{
+	color: #000000;
+	background-color: #fbaeae;
+	border: 1px solid gray;
+
+}
+
+.content_wrapper .content{
+	float: left;
+	width: 80%;
+	background-color: #ffffff;
+	padding: 20px;
+	min-height: 80px;
+	padding-bottom: 10px;
+    border-left: 1px solid gray;
+    min-height: 800px;
+}
+
+.content_wrapper .content .heading{
+	background-color: #ffb2b2;
+	font-size: 30px;
+	padding: 10px 15px;
+	margin: 0px 0px 10px;
+	border-radius: 4px;
+	border: 1px solid #cc6868;
+}
+
+.content_wrapper .content .feedback_form{
+	width: 100%;
+	float: left;
+	border-top: 1px solid #c5c4c4;
+	padding-top: 20px;
+}
+
+.content_wrapper .content .feedback_form form{
+      
+        width: 70%;
+        float: left;
+}
+.content_wrapper .content .feedback_form form .row{
+       width: 100%;
+       float: left;
+       margin-bottom: 18px;
+}
+
+.content_wrapper .content .feedback_form  form .row .label{
+      width: 35%;
+      float: left;
+      padding: 18px;
+      font-weight: bolder;
+
+}
+
+.content_wrapper .content .feedback_form form .row .input{
+      width: 65%;
+      float: right;
+}
+
+.content_wrapper .content .feedback_form form .row .input .form_control{
+	width: 100%;
+	height: 40px;
+	border-radius: 4px;
+	border: 1px solid #c5c4c4;
+	padding: 6px 12px;
+}
+
+.content_wrapper .content .feedback_form form .row .input textarea.form_control{
+   height: 150px;
+}
+
+
+.content_wrapper .content .feedback_form form .row .input .btn{
+	color: #000000;
+	background-color: #fbaeae;
+	border: 1px solid #cc6868;
+	border-radius: 4px;
+	height: 40px;
+	padding: 0px 30px;
+}
+
+.content_wrapper .content p{ 
+	font-size: 16px;
+	color: #000000;
+	line-height: 24px;
+	margin: 0px 0px 50px;
+	font-family: 'Pangolin', cursive;
+
+}
+
+.content_wrapper .content .products .box{
+	width: calc(33.33% - 30px);
+	float: left;
+	box-shadow: 0px 0px 10px #cdcdcd;
+	height: 350px;
+	margin: 15px;
+	border-radius: 4px;
+	position: relative;
+}
+.content_wrapper .content .products .box img{
+	max-width: 100%;
+	max-height: 100%;
+	padding: 20px;
+	width: auto;
+	height: auto;
+	position: absolute;
+	display: inline-block;
+	margin: auto;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+
+}
+
+.content_wrapper .content .products .box .price{
+	background-color: #28a745;
+	padding: 20px 40px
+	color: #ffffff;
+	font-size: 16px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+
+}
+
+.content_wrapper .content .products .box .buy{
+	background-color: #ff7600f2;
+	padding: 10px 20px;
+	color: #ffffff;
+	font-size: 16px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	border-radius: 5px;
+}
+
+.footer{
+	background-color: #047dc3;
+	font-family: 'Pangolin', cursive;
+	padding: 50px 30px;
+	float: left;
+	width: 100%;
+	text-align: center;
+	color: #ffffff
+}
+
+/* if width equal to or less than 991 then */
+
+@media(max-width: 991){
+
+	.content_wrapper .content .products .box{
+		height: 280px;
+	}
+    .content_wrapper .content .feedback-form form{
+    	width: 70%;
+    }		
+}
+
+/*if width is equal to or less than 767 then */
+
+@media(max-width: 767px){
+
+	.content_wrapper .nav{
+		width: 100%;
+        column-gap: 5px;
+	}
+	.content_wrapper .content{
+		width: 100%;
+		border-radius: 0px 5px 5px 0px;
+	}
+	.content_wrapper .content .products .box{
+        width: 100%;
+        margin: 15px 0px;
+	}
+    .content_wrapper .content .feedback-form form{
+    	width: 100%;
+    }	
+}
+
+/*if width is equal to or less than 593 then */
+
+@media(max-width: 593px){
+
+    .content_wrapper .nav{
+		display: block;
+		width: 100%;
+	}
+	.content_wrapper .content .feedback_form form .row .label{
+		width: 100%;
+	}
+	.content_wrapper .content .feedback_form form .row .input{
+		width: 100%;
+	}
+}
